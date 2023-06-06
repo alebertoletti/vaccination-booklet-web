@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 @Component({
-selector: 'app-root',
-templateUrl: 'app.componente.html'
+  selector: "app-root",
+  templateUrl: "app.componente.html",
 })
 export class AppComponent {
-title = 'frontend';
+  title = "frontend";
 }

@@ -1,23 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { VacinacaoService } from 'src/app/componentes/vacinacao/vacinacao.service';
-import { Router } from '@angular/router';
-
+import { Component, OnInit } from "@angular/core";
+import { VacinacaoService } from "src/app/componentes/vacinacao/vacinacao.service";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-manutencao-vacinacaos',
-  templateUrl: './manutencao-vacinacaos.component.html',
-  styleUrls: ['./manutencao-vacinacaos.component.css']
+  selector: "app-manutencao-vacinacaos",
+  templateUrl: "./manutencao-vacinacaos.component.html",
 })
 export class ManutencaoVacinacaosComponent implements OnInit {
-  constructor(private vacinacaoService: VacinacaoService, private router: Router) { }
-  ngOnInit(): void {
-  }
+  constructor(
+    private vacinacaoService: VacinacaoService,
+    private router: Router
+  ) {}
+  ngOnInit(): void {}
 
-  
-  navegarVacinacaoCreate(): void{
+  navegarVacinacaoCreate(): void {
     this.vacinacaoService.salvar = true;
-    this.router.navigate(['/vacinacaos/create'])
-    }
-    
-    
+    this.router.navigate(["/vacinacaos/create"]);
+  }
 }
